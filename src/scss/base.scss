@@ -1,0 +1,12 @@
+@import "./config.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: $font-primary;
+  background-color: $bg-primary;
+  margin: 0;
+  padding: 0;
+}
