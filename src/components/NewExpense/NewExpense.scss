@@ -1,0 +1,11 @@
+@import "../../scss/config.scss";
+
+.new-expense {
+  @include flex(row, center, center, nowrap);
+  background-color: $bg-secondary;
+  width: 70vw;
+  margin: 0 auto;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  padding: 1.2rem 0;
+}

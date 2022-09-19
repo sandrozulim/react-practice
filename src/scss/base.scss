@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+html {
+  @media only screen and (max-width: 950px) {
+    font-size: 13px;
+  }
+
+  @media only screen and (max-width: 650px) {
+    font-size: 11px;
+  }
+}
+
 body {
   color: $font-primary;
   background-color: $bg-primary;
