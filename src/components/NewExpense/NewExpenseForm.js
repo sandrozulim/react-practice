@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./NewExpenseForm.scss";
 
-const NewExpenseForm = () => {
+const NewExpenseForm = (props) => {
   const [inputedTitle, setInputedTitle] = useState("");
   const [inputedAmount, setInputedAmount] = useState("");
   const [inputedDate, setInputedDate] = useState("");
@@ -26,6 +26,9 @@ const NewExpenseForm = () => {
       date: new Date(inputedDate),
     };
 
+    //passing inputedData to PARENT component (newExpense)
+    props.onSaveExpenseData(inputedData);
+    //2 way binding
     setInputedTitle("");
     setInputedAmount("");
     setInputedDate("");

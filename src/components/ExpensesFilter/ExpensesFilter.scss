@@ -1,0 +1,24 @@
+@import "../../scss/config.scss";
+
+.expenses-filter {
+  width: 100%;
+  font-size: 1.4rem;
+
+  &__control {
+    @include flex(row, space-between, center, nowrap);
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  select {
+    font: inherit;
+    background-color: $bg-secondary;
+    color: $font-primary;
+    cursor: pointer;
+    outline: none;
+    padding: 0.6rem 1.4rem;
+    border-radius: 1rem;
+  }
+}
