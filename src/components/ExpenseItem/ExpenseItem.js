@@ -6,9 +6,9 @@ import "./ExpenseItem.scss";
 const ExpenseItem = (props) => {
   return (
     <Card className="expense-item">
-      <ExpenseDate date={props.expenseData.date}></ExpenseDate>
-      <h2 className="expense-item__title">{props.expenseData.title}</h2>
-      <span className="expense-item__amount">{props.expenseData.amount}</span>
+      <ExpenseDate date={props.date}></ExpenseDate>
+      <h2 className="expense-item__title">{props.title}</h2>
+      <span className="expense-item__amount">{props.amount}</span>
     </Card>
   );
 };

@@ -14,11 +14,17 @@
 
   select {
     font: inherit;
-    background-color: $bg-secondary;
+    background-color: $bg-tertiary;
     color: $font-primary;
     cursor: pointer;
     outline: none;
     padding: 0.6rem 1.4rem;
+    border: 1px solid black;
     border-radius: 1rem;
+    transition: all 300ms;
   }
+
+  /* select:hover {
+    background-color: $font-secondary;
+  } */
 }
