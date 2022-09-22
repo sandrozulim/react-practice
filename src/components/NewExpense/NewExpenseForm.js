@@ -34,6 +34,10 @@ const NewExpenseForm = (props) => {
     setInputedDate("");
   };
 
+  const stopEdit = () => {
+    props.stopEditingHandler(false);
+  };
+
   return (
     <form onSubmit={submitHandler} className="new-expense-form">
       <div className="new-expense-form__item">
@@ -45,6 +49,7 @@ const NewExpenseForm = (props) => {
           type="text"
           name="title"
           id="title"
+          required
         />
       </div>
 
@@ -57,6 +62,7 @@ const NewExpenseForm = (props) => {
           type="number"
           name="amount"
           id="amount"
+          required
         />
       </div>
 
@@ -69,10 +75,16 @@ const NewExpenseForm = (props) => {
           type="date"
           name="date"
           id="date"
+          required
         />
       </div>
 
-      <button className="new-expense-form__button">Save</button>
+      <div className="new-expense-form__control">
+        <button onClick={stopEdit} type="button">
+          Cancel
+        </button>
+        <button>Save</button>
+      </div>
     </form>
   );
 };
